@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { useChromeStorage } from "../hooks/useChromeStorage";
 
 export default function App() {
-  const [enabled, setEnabled] = useChromeStorage<boolean>("rm_shorts", false);
+  const [enabled, setEnabled] = useChromeStorage<boolean>("rm_shorts", true);
   const [showWarning, setShowWarning] =
     useChromeStorage<boolean>("rm_warning", false);
   const [isYouTube, setIsYouTube] = useState(false);
